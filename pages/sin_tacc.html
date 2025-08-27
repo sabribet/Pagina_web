@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Contiene metadatos sobre el documento, como el título y enlaces a hojas de estilo. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Define el título del documento que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body><!-- Contiene todo el contenido visible de la página web.-->
+    <header><!--  Define un encabezado para el documento o una sección. -->
+        <div class="logo"><!--Un contenedor genérico para agrupar otros elementos.-->
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo EAT HEALTHY FOOD"> <!--Representa una imagen-->
+        </div> 
+        <nav class="menu" id="menu"> <!-- contiene enlaces de navegacion -->
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pages/sin_tacc.html">PRODUCTOS</a></li>
+                <li><a href="../pages/recetas.html">RECETAS</a></li>
+                <li><a href="../pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="Clasificaciones">
+
+            </div>
+
+            <h2>PRODUCTOS</h2>
+            <section class="productos_carrito">
+
+                <div class="clasificacion">
+                    <img class="alfajor_sin_tacc" src="../asserts/imagenes/alfajor-sin-tacc.jpg" alt="alfajor sin tacc">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" max="50">
+                    <button>Agregar al carrito</button>
+                </div>
+            
+                <div class="clasificacion">
+                    <img class="chipa_sin_tacc" src="../asserts/imagenes/chipa-sin-tacc-libre-de-gluten.jpg" alt="CHIPA SIN TACC">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" max="50">
+                    <button>Agregar al carrito</button>
+                </div>
+            
+                <div class="clasificacion">
+                    <img class="premezcla_sin_tacc" src="../asserts/imagenes/harina-premezcla-sin-tacc.jpg" alt="premezcla sin tacc">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" max="50">
+                    <button>Agregar al carrito</button>
+                </div>
+
+                <div class="clasificacion">
+                    <img class="galletita_canvas" src="../asserts/imagenes/canvas.jpg" alt="Galletita canvas">
+                </div>
+
+                <div class="clasificacion">
+                    <img class="granola_keto" src="../asserts/imagenes/granola_keto.webp" alt="Granola Keto">
+                </div>
+            
+                <div class="clasificacion">
+                    <img class="Limbus_galleta_vegana" src="../asserts/imagenes/limbus_galletita_vegana.png" alt="Limbus galletita vegana">
+                </div>
+
+                <div class="clasificacion">
+                    <img class="mermelada_diabetica" src="../asserts/imagenes/mermelada_tranquilina_diabeticos.png" alt="Mermelada diabeticos">
+                </div>
+
+                <div class="clasificacion">
+                    <img class="frutos_secos_keto" src="../asserts/imagenes/productos_secos_keto.png" alt="Productos secos Keto">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer><!-- Define un pie de página para el documento o una sección. -->
+        
+        <div class="logo">
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo ">
+        </div>
+
+        
+        <div class="menu_inferior">
+            <h3 class="tituloMenu">MENU</h3><!-- pongo class y id al H3 para despues utilizaro en el CSS -->
+            <ul>
+                <li><a href="../diseño/index.html">INICIO</a></li>
+                <li><a href="../diseño/pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="../diseño/pages/recetas.html">RECETAS</a></li>
+                <li><a href="../diseño/pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="../diseño/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h3>CONTACTANÓS</h3>
+            <p>1132457689 <br><!-- Salto de linea. -->
+                ditetica_eat_healthy_foot@gmail.comando <br>
+                Juan Domingo Peron 1982 
+            </p>
+        </div>
+
+        <div>
+            <h3>Subscirbite para mas ofertas</h3>
+            <form>
+                <input type="text" id="correo">
+                <button type="submit"> enviar </button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

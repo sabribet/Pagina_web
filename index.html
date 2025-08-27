@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Contiene metadatos sobre el documento, como el título y enlaces a hojas de estilo. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietetica</title> <!-- Define el título del documento que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="./css/estilos.css"> <!-- Vinculo con mi archivo CSS-->
+</head>
+
+<!-- TODO DENTRO DE BODY
+<a>: Representa un hipervínculo.
+
+<span>: Un contenedor genérico para estilizar partes del texto.
+
+<strong>: Representa texto de importancia fuerte, generalmente mostrado en negrita.
+
+<em>: Representa texto enfatizado, generalmente mostrado en cursiva.
+
+<img>: Representa una imagen.
+
+<br>: Inserta un salto de línea.
+-->
+
+<body><!-- Contiene todo el contenido visible de la página web.-->
+    <header><!--  Define un encabezado para el documento o una sección. -->
+
+        <div class="logo"><!--Un contenedor genérico para agrupar otros elementos.-->
+            <img src="./asserts/imagenes/logo1.jpeg" alt="logo"> <!--Representa una imagen-->
+        </div> 
+ 
+        <nav class="menu" id="menu"> <!-- contiene enlaces de navegacion, se refiere al menu principal-->
+            <ul><!-- lista desordenada, "lo" para lisas ordenadas-->
+                <!-- enlaces relativos que me llevan a otro archivo dentro de mi proyecto -->
+                <li><a href="./index.html">INICIO</a></li> <!-- solo utilizo li en el encabezado-->
+                <li><a href="./pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="./pages/recetas.html">RECETAS</a></li>
+                <li><a href="./pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <div id="presentacion_productos_nuevos" class="prod_nuevo">
+            <p class="propaganda">¡No te lo pierdas!</p>
+        </div>
+
+        <div id="tipos_de_productos" class="tipos_de_productos"><!--Un contenedor genérico para agrupar otros elementos.-->
+            <div class="camp">
+                <img src="./asserts/imagenes/congelados.jpeg" alt="congelados ">
+                <p class="producto">Congelados</p>
+            </div>
+            <div class="camp">
+                <img src="./asserts/imagenes/suplementos.jpeg" alt="suplementos ">
+                <p class="producto">Suplementos</p>
+            </div>
+            <div class="camp">
+                <img src="./asserts/imagenes/refrigerados.jpeg" alt="refrigerados ">
+                <p class="producto">Refrigerados</p>
+            </div>
+            <div class="camp">
+                <img src="./asserts/imagenes/sueltos.jpg" alt="sueltos ">
+                <p class="producto">Sueltos</p>
+            </div>
+            <div class="camp">
+                <img src="./asserts/imagenes/alacena.png" alt="alacena ">
+                <p class="producto">Alacena</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer><!-- Define un pie de página para el documento o una sección. -->
+        
+        <div class="logo">
+            <img src="./asserts/imagenes/logo1.jpeg" alt="logo ">
+        </div>
+
+        
+        <div class="menu_inferior">
+            <h3 class="tituloMenu">MENU</h3><!-- pongo class y id al H3 para despues utilizaro en el CSS -->
+            <ul>
+                <li><a href="../diseño/index.html">INICIO</a></li>
+                <li><a href="../diseño/pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="../diseño/pages/recetas.html">RECETAS</a></li>
+                <li><a href="../diseño/pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="../diseño/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h3>CONTACTANÓS</h3>
+            <p>1132457689 <br><!-- Salto de linea. -->
+                ditetica_eat_healthy_foot@gmail.comando <br>
+                Juan Domingo Peron 1982 
+            </p>
+        </div>
+
+        <div>
+            <h3>Subscirbite para mas ofertas</h3>
+            <form>
+                <input type="text" id="correo">
+                <button type="submit"> enviar </button>
+            </form>
+        </div>
+
+    </footer>
+
+</body>
+</html>

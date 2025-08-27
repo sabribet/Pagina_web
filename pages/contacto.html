@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+
+<body>
+    <header><!--  Define un encabezado para el documento o una sección. -->
+        <div class="logo"><!--Un contenedor genérico para agrupar otros elementos.-->
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo EAT HEALTHY FOOD"> <!--Representa una imagen-->
+        </div> 
+        <nav class="menu" id="menu"> <!-- contiene enlaces de navegacion -->
+            <ul>
+                <!-- enlaces relativos que me llevan a otro archivo dentro de mi proyecto -->
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="./recetas.html">RECETAS</a></li>
+                <li><a href="./quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formulario" action="" method="post">
+            <h2>Quiero ser cliente</h2>
+            <h4>Los campos con(*) son obligatorios</h4>
+
+  <!-- Nombre y Apellido -->
+            <div class="campo-doble">
+                <div class="campo">
+                    <label for="nombre">Nombre (*)</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+                </div>
+            </div>
+
+  <!-- Local y Razón social -->
+            <div class="campo-doble">
+                <div class="campo">
+                    <label for="nombre-local">Nombre del Local</label>
+                    <input type="text" name="nombre-local" id="nombre-local">
+                </div>
+                <div class="campo">
+                    <label for="razon-social">Razón Social (*)</label>
+                    <input type="text" name="razon-social" id="razon-social">
+                </div>
+            </div>
+
+  <!-- Email y Cuit -->
+            <div class="campo-doble">
+                <div class="campo">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="campo">
+                    <label for="cuit">Cuit (*) Solo números sin guiones</label>
+                    <input type="text" name="cuit" id="cuit">
+                </div>
+            </div>
+
+  <!-- Contraseña y Repetir contraseña -->
+            <div class="campo-doble">
+                <div class="campo">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña">
+                </div>
+                <div class="campo">
+                    <label for="repetir-contraseña">Repetir Contraseña</label>
+                    <input type="password" name="repetir-contraseña" id="repetir-contraseña">
+                </div>
+            </div>
+  <!-- Boton enviar -->
+            <button type="submit" class="boton-enviar"> enviar </button>
+
+</form>
+
+    
+    <!-- Género 
+            <label>Género:</label>
+            <div class="genero">
+                <label>
+                <input type="radio" name="genero" value="Femenino"> Femenino
+                </label>
+                <label>
+                <input type="radio" name="genero" value="Masculino"> Masculino
+                </label>
+            </div>-->
+        </form>
+    </main>
+
+    <footer><!-- Define un pie de página para el documento o una sección. -->
+        
+        <div class="logo">
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo ">
+        </div>
+
+        
+        <div class="menu_inferior">
+            <h3 class="tituloMenu">MENU</h3><!-- pongo class y id al H3 para despues utilizaro en el CSS -->
+            <ul>
+                <li><a href="../diseño/index.html">INICIO</a></li>
+                <li><a href="../diseño/pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="../diseño/pages/recetas.html">RECETAS</a></li>
+                <li><a href="../diseño/pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="../diseño/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h3>CONTACTANÓS</h3>
+            <p>1132457689 <br><!-- Salto de linea. -->
+                ditetica_eat_healthy_foot@gmail.comando <br>
+                Juan Domingo Peron 1982 
+            </p>
+        </div>
+
+        <div>
+            <h3>Subscirbite para mas ofertas</h3>
+            <form>
+                <input type="text" id="correo">
+                <button type="submit"> enviar </button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Contiene metadatos sobre el documento, como el título y enlaces a hojas de estilo. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sin TACC</title> <!-- Define el título del documento que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+
+<body><!-- Contiene todo el contenido visible de la página web.-->
+    <header><!--  Define un encabezado para el documento o una sección. -->
+        <div class="logo"><!--Un contenedor genérico para agrupar otros elementos.-->
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo EAT HEALTHY FOOD"> <!--Representa una imagen-->
+        </div> 
+        <nav class="menu" id="menu"> <!-- contiene enlaces de navegacion -->
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="../pages/recetas.html">RECETAS</a></li>
+                <li><a href="../pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recetas_prod">
+        <h1>RECETAS</h1>
+
+        <section id="explicacion keto">
+            <h2>¿Que es la dieta keto?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor reiciendis fugit debitis sed. Autem esse ullam, dolores, distinctio corporis voluptas minus, soluta facere minima quia delectus quod fugiat aspernatur praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem animi consequuntur provident nobis. Temporibus veniam animi odit maiores incidunt laudantium ratione sunt officia. Iure nam voluptate nesciunt modi nemo?
+            </p>
+        </section>
+
+        <section class="recetas_keto">
+            <img class="sopa_marisco" src="../asserts/imagenes/Sopa-de-mariscos.avif" alt="sopa de mariscos">
+            <img class="ensalada_atun" src="..//asserts/imagenes/Ensalada-keto-de-atun-y-aguacate.avif" alt="ensalada de atun">
+            <img class="omelet_cetogenica" src="../asserts/imagenes/omelet_cetogenica_asada.avif" alt="omelet asada">
+            <img class="cookies_keto" src="../asserts/imagenes/Kristies_pumpkin_cookies.avif" alt="cookies">
+            <img class="brownie_keto" src="../asserts/imagenes/Rasberry-brownies.avif" alt="brownies">
+            <img class="chaffles_keto" src="../asserts/imagenes/Chaffles-keto-de-canela.avif" alt="chaffles de canela">
+        </section>
+
+        <section>
+            <h2>VEGANO</h2>
+            <h3>Galletitas choco chips</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor reiciendis fugit debitis sed. Autem esse ullam, dolores, distinctio corporis voluptas minus, soluta facere minima quia delectus quod fugiat aspernatur praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem animi consequuntur provident nobis. Temporibus veniam animi odit maiores incidunt laudantium ratione sunt officia. Iure nam voluptate nesciunt modi nemo?
+            </p>
+            <!-- Enlace absoluto que deriva a paginas externas -->
+            <a href="https://cookpad.com/ar/recetas/24248879?ref=search&search_term=dieta+keto">Receta</a>
+        </section>
+
+        <section class= "recetas_veganas">
+            <img class="albondiga_soja" src="../asserts/imagenes/albondigas_poroto_soja.webp" alt="albondigas soja">
+            <img class="galleta_salada" src="../asserts/imagenes/galleta_salada.webp" alt="galleta salada">
+            <img class="pizzetas_mijo" src="../asserts/imagenes/pizzetas_de_mijo.webp" alt="pizzetas mijo">
+            <img class="arroz_leche_casero" src="../asserts/imagenes/arroz_con_leche(casera).webp" alt="arroz con leche">
+            <img class="mousse_chocolate" src="../asserts/imagenes/mousse_chocolate.webp" alt="mousse chocolate">
+            <img class="torta_remolacha" src="../asserts/imagenes/torta_chocolate_remolacha.webp" alt="torta choco y remolacha">
+        </section>
+
+
+
+
+
+        <section>
+            <!-- Enlace interno que deriva a alguna parte del archivo en el que nos encontramos, tenemos que ponerle un id al section -->
+            <a href="#receta keto y sin tacc">Receta keto y sin tacc</a>
+        </section>
+    </main>
+
+
+    <br>
+    <footer><!-- Define un pie de página para el documento o una sección. -->
+        
+        <div class="logo">
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo ">
+        </div>
+
+        
+        <div class="menu_inferior">
+            <h3 class="tituloMenu">MENU</h3><!-- pongo class y id al H3 para despues utilizaro en el CSS -->
+            <ul>
+                <li><a href="../diseño/index.html">INICIO</a></li>
+                <li><a href="../diseño/pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
+                <li><a href="../diseño/pages/recetas.html">RECETAS</a></li>
+                <li><a href="../diseño/pages/quienes_somos.html"> QUIENES SOMOS</a></li>
+                <li><a href="../diseño/pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        <div >
+            <h3>CONTACTANÓS</h3>
+            <p>1132457689 <br><!-- Salto de linea. -->
+                ditetica_eat_healthy_foot@gmail.comando <br>
+                Juan Domingo Peron 1982 
+            </p>
+        </div>
+
+        <div>
+            <h3>Subscirbite para mas ofertas</h3>
+            <form>
+                <input type="text" id="correo">
+                <button type="submit"> enviar </button>
+            </form>
+        </div>
+
+    </footer>
+</body>
+
+</html>

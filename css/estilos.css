@@ -1,0 +1,343 @@
+/* comentarios */
+/* tengo que vinculas mi css con cada css por medio del link en head */
+/* shift + Alt + A */
+/* Sel lee en cascada, de arriba hacia abajo */
+/* 
+selector { propiedad = valor
+ */
+
+/* TENGO QUE VER COMO QUEDARIA EN PANTALLLA CHICA */
+
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=My+Soul&display=swap');
+
+/* 
+(*) selector universal, aparece en todos los html
+ */
+*{ margin: 0;
+    padding: 0;}
+
+body{font-family:"Adamina", serif;
+  padding-top: 6.6%;/* evita que el menu que tienen position fixed este arriba del texto y lo tape */
+}
+/* saca los puntos del menu */
+
+/* todas las etiquetas de enlace que esten en una lista (solo a{}
+text-decoration: none => saca delineado
+15 y 16 pixel es la medida habitual tamaño de la tipografia
+*/
+header li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+
+}
+
+footer li>a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+}
+
+.menu_inferior ul{
+    list-style: none;
+}
+/* class con punto
+id con #
+ */
+header,
+footer {
+    background-color: rgb(14, 204, 74);
+    color: rgb(0, 0, 0);
+}
+header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+     /* menu fijo */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;        /* puedes ajustar esta altura */
+    z-index: 600; /* cantidad de elementos que van a estar debajo del menu */
+}
+
+.menu ul{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 80px;
+}
+/* #id supera a .nombre class y este supera a las otras etiquetas */
+
+/* .logo img{
+    width: -300px;
+    height: auto;
+} */
+
+footer{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px;
+    }
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Inicio */
+/* modifico la imagen de fondo, borro la del html */
+.tipos_de_productos {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.camp{
+    position: relative;
+    margin: 10px;
+}
+
+.camp img { /* arreglo de imagenes */
+  width: 260px; 
+  height: 260px;
+  object-fit: cover; /* cover para que la imagen se acomode al tamaño que quiero*/ 
+  border-radius: 10px;
+}
+
+.producto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem; /* tamaño de la letra */
+    font-weight: bold; /* letra en negrita*/
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* sombra del texto */
+}
+#presentacion_productos_nuevos{
+    background-image: url(../asserts/imagenes/crudda.png);
+    height: 400px;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+/* font-size es tamaño del texto
+margin es margen alrededor del texto
+unidades de medida son px(textos) em() rem() y %(ancho y alto)
+text-align es alineacion del texto
+backround es fondo
+*/
+.prod_nuevo{
+    position: relative;
+}
+#presentacion_productos_nuevos .propaganda{
+    background-color: transparent;
+    color: rgba(247, 255, 255, 0.57);
+    font-size: 40px;
+    font-weight: 1500;
+    position: absolute;
+    top: 50%;                 /* Lo posiciona al centro vertical */
+    left: 50%;                /* Lo posiciona al centro horizontal */
+    transform: translate(-50%, -50%);
+}
+
+.logo img{
+    width: 100px; 
+    height: 100px;
+    opacity: 0.7;
+    object-fit: cover;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Contacto*/
+.formulario{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 500px;
+    margin: 20px auto; /* arriba y abajo - derecha y izquierda*/
+    padding: 10px;
+    border: 1px solid #717070;
+    text-align: center;
+    transition: 0.3s; /* en lugar de que un color cambie de golpe, con transition podés hacer que cambie suavemente en medio segundo. */
+}
+
+.campo-doble {
+  display: flex;
+  gap: 1rem; /* Espacio entre los dos campos */
+}
+
+.campo {
+  flex: 1; /* Que cada campo ocupe el mismo ancho */
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.boton-enviar {
+  background-color: #28a745; /* color de fondo (verde) */
+  color: white;              /* color del texto */
+  font-size: 1.2rem;         /* tamaño del texto */
+  padding: 0.75rem 1.5rem;   /* espacio interno (vertical y horizontal) */
+  border: none;              /* sin borde por defecto */
+  border-radius: 5px;        /* bordes redondeados */
+  cursor: pointer;           /* cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #218838; /* color más oscuro al pasar el mouse */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* RECETAS*/
+
+.recetas_prod{
+  background-color: rgb(203, 164, 66);
+}
+
+.recetas_keto{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row: repeat(2, 1fr);
+  grid-template-areas: 
+  "sopa_marisco ensalada_atun omelet_cetogenica"
+  "cookies_keto brownie_keto chaffles_keto";
+  width: 80vw;
+  height: 80vh;
+  margin: 0;
+  gap: 10px;
+  position: relative;
+  background-color: rgba(202, 127, 80, 0.868);
+  padding: 7px;
+}
+
+.recetas_keto img , .recetas_veganas img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.recetas_keto .sopa_marisco{
+  grid-area: sopa_marisco;
+}
+
+.recetas_keto .ensalada_atun{
+  grid-area: ensalada_atun;
+}
+
+.recetas_keto .omelet_cetogenica{
+  grid-area: omelet_cetogenica;
+}
+
+.recetas_keto .cookies_keto{
+  grid-area: cookies_keto;
+}
+
+.recetas_keto .brownie_keto{
+  grid-area: brownie_keto;
+}
+
+.recetas_keto .chaffles_keto{
+  grid-area: chaffles_keto;
+}
+
+.recetas_veganas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row: repeat(2, 1fr);
+  grid-template-areas: 
+  "albondiga_soja galleta_salada pizzetas_mijo"
+  "arroz_leche_casero mousse_chocolate torta_remolacha";
+  width: 80vw;
+  height: 80vh;
+  margin: 0;
+  gap: 10px;
+  position: relative;
+  background-color: rgba(202, 127, 80, 0.868);
+  padding: 7px;
+}
+
+.recetas_keto .albondiga_soja{
+  grid-area: albondiga_soja;
+}
+
+.recetas_keto .galleta_salada{
+  grid-area: galleta_salada;
+}
+
+.recetas_keto .pizzetas_mijo{
+  grid-area: pizzetas_mijo;
+}
+
+.recetas_keto .arroz_leche_casero{
+  grid-area: arroz_leche_casero;
+}
+
+.recetas_keto .mousse_chocolate{
+  grid-area: mousse_chocolate;
+}
+
+.recetas_keto .torta_remolacha{
+  grid-area: torta_remolacha;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* SIN TACC*/
+
+.productos_carrito{
+  display: grid;
+  grid-template-columns: repeat(4,1fr) ;
+  grid-template-rows: repeat(4, 1fr);
+  width: 10vw;
+  margin: 0;
+  gap: 10px;
+  padding: 7px;
+}
+
+.productos_carrito .clasificacion .chipa_sin_tacc{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.productos_carrito .clasificacion .premezcla_sin_tacc{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.productos_carrito .clasificacion .galletita_canvas{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.productos_carrito .clasificacion .granola_keto{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.productos_carrito .clasificacion .Limbus_galleta_vegana{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.productos_carrito .clasificacion .mermelada_diabetica{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.productos_carrito .clasificacion .frutos_secos_keto{
+  grid-column: 2/3;
+  grid-row: 3/4;
+ }
