@@ -4,111 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Define el título del documento que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body><!-- Contiene todo el contenido visible de la página web.-->
     <header><!--  Define un encabezado para el documento o una sección. -->
-        <div class="logo"><!--Un contenedor genérico para agrupar otros elementos.-->
-            <img src="../asserts/imagenes/logo1.jpeg" alt="logo EAT HEALTHY FOOD"> <!--Representa una imagen-->
-        </div> 
-        <nav class="menu" id="menu"> <!-- contiene enlaces de navegacion -->
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/sin_tacc.html">PRODUCTOS</a></li>
-                <li><a href="../pages/recetas.html">RECETAS</a></li>
-                <li><a href="../pages/quienes_somos.html"> QUIENES SOMOS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg position-fixed w-100" style="z-index: 1000; height: 100px;">
+            <div class="container-fluid position-relative">
+
+        <!-- Menú hamburguesa (IZQUIERDA) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
+                aria-controls="menuOffcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <!-- LOGO CENTRADO ABSOLUTO -->
+            <div class="position-absolute start-50 translate-middle-x">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../asserts/imagenes/logo1.jpeg" alt="logo" style="height: 100px;">
+                </a>
+            </div>
+
+        <!-- Menú offcanvas que se abre desde la izquierda -->
+            <div class="offcanvas offcanvas-start mi-menu" tabindex="-1" id="menuOffcanvas"
+                aria-labelledby="menuOffcanvasLabel">
+
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuOffcanvasLabel">Menú</h5>
+                <button type="button" class="btn-close btn-close-white "
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productosDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-success" aria-labelledby="productosDropdown">
+                        <li><a class="dropdown-item" href="./sin_tacc.html">Sin TACC</a></li>
+                        <li><a class="dropdown-item" href="#">Vegano</a></li>
+                        <li><a class="dropdown-item" href="#">Keto</a></li>
+                        <li><a class="dropdown-item" href="#">Sin Azúcar</a></li>
+                        <li><a class="dropdown-item" href="#">Probióticos</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/recetas.html">RECETAS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/quienes_somos.html">QUIÉNES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
         <div>
-            <div class="Clasificaciones">
+            <h2 class="text-center my-4">Productos Sin TACC</h2>
 
-            </div>
-
-            <h2>PRODUCTOS</h2>
             <section class="productos_carrito">
 
-                <div class="clasificacion">
-                    <img class="alfajor_sin_tacc" src="../asserts/imagenes/alfajor-sin-tacc.jpg" alt="alfajor sin tacc">
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" value="1" max="50">
-                    <button>Agregar al carrito</button>
-                </div>
-            
-                <div class="clasificacion">
-                    <img class="chipa_sin_tacc" src="../asserts/imagenes/chipa-sin-tacc-libre-de-gluten.jpg" alt="CHIPA SIN TACC">
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" value="1" max="50">
-                    <button>Agregar al carrito</button>
-                </div>
-            
-                <div class="clasificacion">
-                    <img class="premezcla_sin_tacc" src="../asserts/imagenes/harina-premezcla-sin-tacc.jpg" alt="premezcla sin tacc">
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" value="1" max="50">
-                    <button>Agregar al carrito</button>
-                </div>
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/alfajor-sin-tacc.jpg" alt="Alfajor sin TACC">
+                <p class="descripcion">
+                Alfajor de nuez con dulde leche</p>
+                <label for="cantidad1">Cantidad:</label>
+                <input type="number" id="cantidad1" name="cantidad1" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
 
-                <div class="clasificacion">
-                    <img class="galletita_canvas" src="../asserts/imagenes/canvas.jpg" alt="Galletita canvas">
-                </div>
+            <div class="clasificacion">
+                <img src="..//asserts/imagenes/fideos_maiz.jpeg" alt="Fideos de maiz sin TACC">
+                <p class="descripcion">
+                Fideos fussilli de maiz</p>
+                <label for="cantidad1">Cantidad:</label>
+                <input type="number" id="cantidad1" name="cantidad1" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
 
-                <div class="clasificacion">
-                    <img class="granola_keto" src="../asserts/imagenes/granola_keto.webp" alt="Granola Keto">
-                </div>
-            
-                <div class="clasificacion">
-                    <img class="Limbus_galleta_vegana" src="../asserts/imagenes/limbus_galletita_vegana.png" alt="Limbus galletita vegana">
-                </div>
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/paluzzi-vainillas.jpeg" alt="Vainillas sin TACC">
+                <p class="descripcion">
+                Vainillas Palluzzi </p>
+                <label for="cantidad1">Cantidad:</label>
+                <input type="number" id="cantidad1" name="cantidad1" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
 
-                <div class="clasificacion">
-                    <img class="mermelada_diabetica" src="../asserts/imagenes/mermelada_tranquilina_diabeticos.png" alt="Mermelada diabeticos">
-                </div>
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/chipa-sin-tacc-libre-de-gluten.jpg" alt="Chipa sin TACC">
+                <label for="cantidad2">Cantidad:</label>
+                <input type="number" id="cantidad2" name="cantidad2" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
 
-                <div class="clasificacion">
-                    <img class="frutos_secos_keto" src="../asserts/imagenes/productos_secos_keto.png" alt="Productos secos Keto">
-                </div>
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/harina-premezcla-sin-tacc.jpg" alt="Premezcla sin TACC">
+                <label for="cantidad3">Cantidad:</label>
+                <input type="number" id="cantidad3" name="cantidad3" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/canvas.jpg" alt="Galletita Canvas">
+                <label for="cantidad4">Cantidad:</label>
+                <input type="number" id="cantidad4" name="cantidad4" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/granola_keto.webp" alt="Granola Keto">
+                <label for="cantidad5">Cantidad:</label>
+                <input type="number" id="cantidad5" name="cantidad5" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/limbus_galletita_vegana.png" alt="Limbus Galletita Vegana">
+                <label for="cantidad6">Cantidad:</label>
+                <input type="number" id="cantidad6" name="cantidad6" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/mermelada_tranquilina_diabeticos.png" alt="Mermelada para Diabéticos">
+                <label for="cantidad7">Cantidad:</label>
+                <input type="number" id="cantidad7" name="cantidad7" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
+
+            <div class="clasificacion">
+                <img src="../asserts/imagenes/productos_secos_keto.png" alt="Frutos Secos Keto">
+                <label for="cantidad8">Cantidad:</label>
+                <input type="number" id="cantidad8" name="cantidad8" value="1" max="50">
+                <button>Agregar al carrito</button>
+            </div>
+
             </section>
         </div>
     </main>
+
     <footer><!-- Define un pie de página para el documento o una sección. -->
         
-        <div class="logo">
-            <img src="../asserts/imagenes/logo1.jpeg" alt="logo ">
+        <div class="container">
+        <div class="row text-center text-lg-start">
+
+        <!-- Logo -->
+        <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <img src="../asserts/imagenes/logo1.jpeg" alt="logo" style="max-width: 150px;">
         </div>
 
-        
-        <div class="menu_inferior">
-            <h3 class="tituloMenu">MENU</h3><!-- pongo class y id al H3 para despues utilizaro en el CSS -->
-            <ul>
-                <li><a href="../diseño/index.html">INICIO</a></li>
-                <li><a href="../diseño/pages/sin_tacc.html">PRODUCTOS SIN TACC</a></li>
-                <li><a href="../diseño/pages/recetas.html">RECETAS</a></li>
-                <li><a href="../diseño/pages/quienes_somos.html"> QUIENES SOMOS</a></li>
-                <li><a href="../diseño/pages/contacto.html">CONTACTO</a></li>
-            </ul>
+        <!-- Menú -->
+        <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <h3 class="tituloMenu">MENÚ</h3>
+            <ul class="list-unstyled">
+                <li><a href="../index.html" class="text-white text-decoration-none">INICIO</a></li>
+                <li><a href="./recetas.html" class="text-white text-decoration-none">RECETAS</a></li>
+                <li><a href="../pages/quienes_somos.html" class="text-white text-decoration-none">QUIÉNES SOMOS</a></li>
+                <li><a href="../pages/contacto.html" class="text-white text-decoration-none">CONTACTO</a></li>
+            </ul>z-index
         </div>
 
-        <div >
-            <h3>CONTACTANÓS</h3>
-            <p>1132457689 <br><!-- Salto de linea. -->
-                ditetica_eat_healthy_foot@gmail.comando <br>
-                Juan Domingo Peron 1982 
-            </p>
+        <!-- Contacto -->
+        <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <h3>CONTACTANOS</h3>
+            <p class="mb-1">1132457689</p>
+            <p class="mb-1">dietética_eat_healthy_foot@gmail.com</p>
+            <p>Juan Domingo Perón 1982</p>
         </div>
 
-        <div>
-            <h3>Subscirbite para mas ofertas</h3>
+        <!-- Formulario -->
+        <div class="col-12 col-lg-3">
+            <h3>Suscribite para más ofertas</h3>
             <form>
-                <input type="text" id="correo">
-                <button type="submit"> enviar </button>
+                <div class="mb-2">
+                    <input type="text" class="form-control" id="correo" placeholder="Tu correo">
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
             </form>
         </div>
 
+        </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
