@@ -152,10 +152,6 @@ backround es fondo
   .carousel-item img {
     height: 250px;
   }
-
-  .carousel-caption .propaganda {
-    font-size: 30px;
-  }
 }
 
 /* Pantallas pequeñas (md o menos) */
