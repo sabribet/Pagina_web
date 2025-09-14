@@ -148,6 +148,42 @@ backround es fondo
     opacity: 0.7;
     object-fit: cover;
 }
+
+#presentacion_productos_nuevos .propaganda {
+  background-color: transparent;
+  color: rgba(247, 255, 255, 0.57);
+  font-size: 40px;
+  font-weight: 1500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  width: 100px; 
+  height: 100px;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+/* Pantallas grandes (xl y más) */
+@media (min-width: 1200px) {
+  #presentacion_productos_nuevos {
+    height: 200px;
+  }
+}
+
+/* Pantallas pequeñas (md o menos) */
+@media (max-width: 768px) {
+  #presentacion_productos_nuevos {
+    height: 300px;
+  }
+
+  #presentacion_productos_nuevos .propaganda {
+    font-size: 24px;
+  }
+}
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Contacto*/
 .formulario {
