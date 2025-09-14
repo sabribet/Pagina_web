@@ -92,9 +92,52 @@
 
     
     <main>
-        <div id="presentacion_productos_nuevos" class="prod_nuevo">
-            <p class="propaganda">Ofertas</p>
+        <!-- Carrusel de ofertas o productos nuevos -->
+        <div id="carouselOfertas" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+  
+  <!-- Indicadores (puntitos) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+            <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+            <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="2" aria-label="Imagen 3"></button>
         </div>
+
+    <!-- Imágenes -->
+        <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="./asserts/imagenes/promo_oferta1.jpg" class="d-block w-100" alt="Primera imagen de oferta">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="propaganda">Ofertas</h2>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="./asserts/imagenes/ofertas2.jpeg" class="d-block w-100" alt="Segunda imagen de oferta">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="propaganda">Ofertas</h2>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="./asserts/imagenes/ofertas3.png" class="d-block w-100" alt="Tercera imagen de oferta">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="propaganda">Ofertas</h2>
+            </div>
+        </div>
+        </div>
+
+    <!-- Flechas -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+
 
         <div id="tipos_de_productos" class="tipos_de_productos"><!--Un contenedor genérico para agrupar otros elementos.-->
             <div class="camp">
