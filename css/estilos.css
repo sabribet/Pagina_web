@@ -142,13 +142,13 @@ backround es fondo
 }
 
 /* Pantallas grandes (xl y más) */
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   #presentacion_productos_nuevos {
     height: 200px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .carousel-item img {
     height: 250px;
   }
